@@ -20,6 +20,7 @@ spec:
       containers:
       - image: rahultipledocker/test
         name: flaskdemo
+        imagePullPolicy: IfNotPresent
         resources: {}
 status: {}
 ---
