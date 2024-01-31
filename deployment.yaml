@@ -20,8 +20,8 @@ spec:
       containers:
       - image: rahultipledocker/test
         name: flaskdemo
-        imagePullPolicy: IfNotPresent
-        resources: {}
+      imagePullSecrets:
+      - name: my-docker-credentials
 status: {}
 ---
 apiVersion: v1
