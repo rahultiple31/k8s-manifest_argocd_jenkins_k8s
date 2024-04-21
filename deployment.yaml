@@ -18,7 +18,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: rahultipledocker/test:9
+      - image: rahultipledocker/test:${DOCKER_TAG}
         name: flaskdemo
       imagePullSecrets:
       - name: my-docker-credentials
